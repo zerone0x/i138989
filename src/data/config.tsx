@@ -13,6 +13,8 @@ import {
   FaReact,
   FaSass,
   FaCubes,
+  FaGithubAlt,
+  FaChartLine,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -101,6 +103,7 @@ export const projectData = [
       "CMS",
       "Typescript",
       "TailwindCss",
+      "SEO",
     ],
     imageURL: "/proj/game.png",
     GithubLink: "https://gameplaytips.com/",
@@ -135,7 +138,7 @@ export const projectData = [
   {
     title: "Reddit Telegram Bot",
     desc: "An alternative FOSS to Zapier or IFTTT is a Telegram bot that delivers the latest posts from Reddit.",
-    tags: ["Python"],
+    tags: ["Python", "Github Actions"],
     imageURL: "/proj/reddit-tg.png",
     GithubLink: "https://github.com/zerone0x/reddit-telegram-bot",
     LiveLink: "https://github.com/zerone0x/reddit-telegram-bot/actions",
@@ -221,6 +224,14 @@ export const getTag = (tag: string) => {
     case "CMS":
       values[0] = "bg-emerald-400";
       values[1] = FaCubes;
+      break;
+    case "Github Actions":
+      values[0] = "bg-slate-400";
+      values[1] = FaGithubAlt;
+      break;
+    case "SEO":
+      values[0] = "bg-orange-400";
+      values[1] = FaChartLine;
       break;
     default:
       values[0] = "bg-gray-400";
