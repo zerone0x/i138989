@@ -12,6 +12,7 @@ import {
   FaPython,
   FaReact,
   FaSass,
+  FaCubes,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -93,18 +94,18 @@ export type SkillsProp = (typeof skillsData)[number];
 export const projectData = [
   {
     title: "GamePlayTips",
-    desc: "Full-stack game directory website, support game search, game blog, game details, and subscription.",
+    desc: "Full-stack game directory website with advanced search, detailed game information, blog system, newsletter subscriptions, i18n support and SEO optimization for better discoverability.",
     tags: [
       "Next.Js",
       "Postgresql",
-      "Supabase",
+      "CMS",
       "Typescript",
       "TailwindCss",
     ],
     imageURL: "/proj/game.png",
     GithubLink: "https://gameplaytips.com/",
     LiveLink: "https://gameplaytips.com/",
-    isTextWhite: false,
+    isTextWhite: true,
   },
   {
     title: "Echo Social APP",
@@ -205,18 +206,21 @@ export const getTag = (tag: string) => {
       values[0] = "bg-green-300";
       values[1] = SiMongodb;
       break;
-
     case "Scss":
       values[0] = "bg-pink-400";
       values[1] = BsFiletypeScss;
       break;
     case "Postgresql":
-      values[0] = "bg-blue-400";
+      values[0] = "bg-blue-300";
       values[1] = FaDatabase;
       break;
     case "Supabase":
       values[0] = "bg-purple-400";
       values[1] = FaDatabase;
+      break;
+    case "CMS":
+      values[0] = "bg-emerald-400";
+      values[1] = FaCubes;
       break;
     default:
       values[0] = "bg-gray-400";
