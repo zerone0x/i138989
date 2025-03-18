@@ -102,7 +102,7 @@ export const projectData = [
       "Postgresql",
       "CMS",
       "Typescript",
-      "TailwindCss",
+      "TailwindCSS",
       "SEO",
     ],
     imageURL: "/proj/game.png",
@@ -119,7 +119,7 @@ export const projectData = [
       "Express.Js",
       "MongoDB",
       "Typescript",
-      "TailwindCss",
+      "TailwindCSS",
     ],
     imageURL: "/proj/echo.png",
     GithubLink: "https://github.com/zerone0x/Echo-Frontend",
@@ -189,7 +189,7 @@ export const getTag = (tag: string) => {
       values[0] = "bg-red-500";
       values[1] = SiReactquery;
       break;
-    case "TailwindCss":
+    case "TailwindCSS":
       values[0] = "bg-teal-400";
       values[1] = RiTailwindCssFill;
       break;
