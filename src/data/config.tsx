@@ -115,6 +115,20 @@ export const projectData = [
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.vercel.app//",
     isTextWhite: true,
+  },{
+    title: "GamePlayTips",
+    desc: "Full-stack game directory website, support game search, game blog, game details, and subscription.",
+    tags: [
+      "Next.Js",
+      "Postgresql",
+      "Supabase",
+      "Typescript",
+      "TailwindCss",
+    ],
+    imageURL: "/proj/game.png",
+    GithubLink: "https://gameplaytips.com/",
+    LiveLink: "https://gameplaytips.com/",
+    isTextWhite: false,
   },
   {
     title: "Reddit Telegram Bot",
@@ -194,6 +208,14 @@ export const getTag = (tag: string) => {
     case "Scss":
       values[0] = "bg-pink-400";
       values[1] = BsFiletypeScss;
+      break;
+    case "Postgresql":
+      values[0] = "bg-blue-400";
+      values[1] = FaDatabase;
+      break;
+    case "Supabase":
+      values[0] = "bg-purple-400";
+      values[1] = FaDatabase;
       break;
     default:
       values[0] = "bg-gray-400";
