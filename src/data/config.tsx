@@ -92,6 +92,21 @@ export type SkillsProp = (typeof skillsData)[number];
 
 export const projectData = [
   {
+    title: "GamePlayTips",
+    desc: "Full-stack game directory website, support game search, game blog, game details, and subscription.",
+    tags: [
+      "Next.Js",
+      "Postgresql",
+      "Supabase",
+      "Typescript",
+      "TailwindCss",
+    ],
+    imageURL: "/proj/game.png",
+    GithubLink: "https://gameplaytips.com/",
+    LiveLink: "https://gameplaytips.com/",
+    isTextWhite: false,
+  },
+  {
     title: "Echo Social APP",
     desc: "Full-stack Mastodon-like social web app for friends! Share posts with text and images, engage in comments, customize your profile, and search for content easily. Follow others, bookmark favorites, receive notifications.",
     tags: [
@@ -115,20 +130,6 @@ export const projectData = [
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.vercel.app//",
     isTextWhite: true,
-  },{
-    title: "GamePlayTips",
-    desc: "Full-stack game directory website, support game search, game blog, game details, and subscription.",
-    tags: [
-      "Next.Js",
-      "Postgresql",
-      "Supabase",
-      "Typescript",
-      "TailwindCss",
-    ],
-    imageURL: "/proj/game.png",
-    GithubLink: "https://gameplaytips.com/",
-    LiveLink: "https://gameplaytips.com/",
-    isTextWhite: false,
   },
   {
     title: "Reddit Telegram Bot",
