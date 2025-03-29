@@ -13,13 +13,15 @@ function ProjCard({ projData }: { projData: projectProp }) {
       style={{ maxWidth: "500px" }}
     >
       <div className="relative">
-        <a
-          href={projData.GithubLink}
-          target="_blank"
-          className={`absolute top-4 right-4 z-20 ${isTextWhite ? "text-white" : "text-black"} text-3xl hover:text-gray-400 focus:text-gray-300 active:scale-95 transition duration-300 hover:opacity-175`}
-        >
-          <FaGithub />
-        </a>
+        {projData?.isGithub && (
+          <a
+            href={projData.GithubLink}
+            target="_blank"
+            className={`absolute top-4 right-4 z-20 ${isTextWhite ? "text-white" : "text-black"} text-3xl hover:text-gray-400 focus:text-gray-300 active:scale-95 transition duration-300 hover:opacity-175`}
+          >
+            <FaGithub />
+          </a>
+        )}
         <div className="group block relative">
           <a href={projData.LiveLink} target="_blank">
             <div

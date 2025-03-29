@@ -15,6 +15,7 @@ import {
   FaCubes,
   FaGithubAlt,
   FaChartLine,
+  FaGamepad,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -97,15 +98,9 @@ export const projectData = [
   {
     title: "GamePlayTips",
     desc: "Full-stack game directory website with advanced search, detailed game information, blog system, newsletter subscriptions, i18n support and SEO optimization for better discoverability.",
-    tags: [
-      "Next.Js",
-      "Postgresql",
-      "CMS",
-      "Typescript",
-      "TailwindCSS",
-      "SEO",
-    ],
+    tags: ["Next.Js", "Postgresql", "CMS", "Typescript", "TailwindCSS", "SEO"],
     imageURL: "/proj/game.png",
+    isGithub: false,
     GithubLink: "https://gameplaytips.com/",
     LiveLink: "https://gameplaytips.com/",
     isTextWhite: true,
@@ -121,6 +116,7 @@ export const projectData = [
       "Typescript",
       "TailwindCSS",
     ],
+    isGithub: true,
     imageURL: "/proj/echo.png",
     GithubLink: "https://github.com/zerone0x/Echo-Frontend",
     LiveLink: "https://echoloop.vercel.app/",
@@ -131,15 +127,26 @@ export const projectData = [
     desc: "Frontend Movie Tracking application for movie lovers, providing a seamless experience for movie searching, rating, watchlist creating. Provides latest Movie/TV trending lists of top trending and rating using TMDB API.",
     tags: ["React", "Typescript", "Redux", "Reactquery", "Scss"],
     imageURL: "/proj/movie4fun.png",
+    isGithub: true,
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.vercel.app//",
     isTextWhite: true,
+  },
+  {
+    title: "Mad Shooter Game",
+    desc: "A simple shooter game inspired by 'Everyday Shooter', featuring multiple levels with unique enemies and power-ups. Players can shoot enemies, dodge bullets, and compete for high scores in this arcade-style game.",
+    tags: ["React", "Typescript", "TailwindCSS", "PhaserJS"],
+    imageURL: "/proj/shooter.png",
+    isGithub: false,
+    GithubLink: "https://madshooter.vercel.app/",
+    LiveLink: "https://madshooter.vercel.app/",
   },
   {
     title: "Reddit Telegram Bot",
     desc: "An alternative FOSS to Zapier or IFTTT is a Telegram bot that delivers the latest posts from Reddit.",
     tags: ["Python", "Github Actions"],
     imageURL: "/proj/reddit-tg.png",
+    isGithub: true,
     GithubLink: "https://github.com/zerone0x/reddit-telegram-bot",
     LiveLink: "https://github.com/zerone0x/reddit-telegram-bot/actions",
   },
@@ -148,6 +155,7 @@ export const projectData = [
     desc: "Play random youtube videos from various channels.",
     tags: ["React", "Typescript", "Redux", "Scss"],
     imageURL: "/proj/random-ytb.png",
+    isGithub: true,
     GithubLink: "https://github.com/zerone0x/RandomYtb",
     LiveLink: "https://playtb.tech/",
   },
@@ -232,6 +240,10 @@ export const getTag = (tag: string) => {
     case "SEO":
       values[0] = "bg-orange-400";
       values[1] = FaChartLine;
+      break;
+    case "PhaserJS":
+      values[0] = "bg-yellow-400";
+      values[1] = FaGamepad;
       break;
     default:
       values[0] = "bg-gray-400";
