@@ -40,7 +40,11 @@ function MobieMenu({
           </Link>
         </li>
         <li>
-          <a href="https://blog.trine.dev/" title="trine.blog" target="_blank">
+          <a
+            href="https://wakeupme.vercel.app/"
+            title="trine.blog"
+            target="_blank"
+          >
             <p className="mobileHeader">Blog</p>
           </a>
         </li>

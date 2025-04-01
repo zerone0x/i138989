@@ -32,7 +32,7 @@ function header({ setMenuOpen }: { setMenuOpen: any }) {
             </li>
             <li className="header">
               <a
-                href="https://blog.trine.dev/"
+                href="https://wakeupme.vercel.app/"
                 title="trine.blog"
                 target="_blank"
               >
